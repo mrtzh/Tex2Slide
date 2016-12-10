@@ -1,6 +1,6 @@
 # Tex2Keynote
 
-An convenient minimalistic tool to get latex snippets into Keynote.
+A convenient minimalistic tool to get latex snippets into Keynote.
 
 ## Install
 
