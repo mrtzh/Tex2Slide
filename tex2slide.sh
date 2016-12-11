@@ -1,18 +1,22 @@
 #!/bin/bash
 #
-# tex2keynote.sh
+# tex2slide.sh
 #
-# A simple shell/Apple script to copy text from Keynote, compile it using pdflatex,
-# and paste it back into Keynote as a pdf snippet.
+# A simple shell/Apple script to copy text from Keynote, compile it using 
+# pdflatex, and paste it back into Keynote as a pdf snippet. As is, the 
+# script works for Keynote, but it should work for Powerpoint and other
+# applications by replacing Keynote below with another name.
 #
 # To create MacOS app, execute:
-#  mkdir -p Tex2Keynote.app/Contents/MacOS; cp tex2keynote.sh Tex2Keynote.app/Contents/MacOS/Tex2Keynote; chmod +x Tex2Keynote.app/Contents/MacOS/Tex2Keynote
+#  mkdir -p Tex2Slide.app/Contents/MacOS
+#  cp tex2slide.sh Tex2Slide.app/Contents/MacOS/Tex2Slide
+#  chmod +x Tex2Slide.app/Contents/MacOS/Tex2Slide
 
 FONTSIZEPT=32
 PDFLATEX=/Library/TeX/texbin/pdflatex
 OSASCRIPT=/usr/bin/osascript
 WORKDIR=/tmp
-FNAME="tex2keynote-tmp"
+FNAME="tex2slide-tmp"
 TEXFNAME=$WORKDIR'/'$FNAME'.tex'
 PDFFNAME=$WORKDIR'/'$FNAME'.pdf'
 
