@@ -1,18 +1,18 @@
-# Tex2Keynote
+# Tex2Slide
 
-A convenient minimalistic tool to get latex snippets into Keynote.
+A convenient minimalistic tool to get latex snippets into your presenter tool.
 
 ## Install
 
 1. Create a MacOs app. From the command line, execute:
 
 ```
-mkdir -p Tex2Keynote.app/Contents/MacOS 
-cp tex2keynote.sh Tex2Keynote.app/Contents/MacOS/Tex2Keynote
-chmod +x Tex2Keynote.app/Contents/MacOS/Tex2Keynote
+mkdir -p Tex2Slide.app/Contents/MacOS 
+cp tex2slide.sh Tex2Slide.app/Contents/MacOS/Tex2Slide
+chmod +x Tex2Slide.app/Contents/MacOS/Tex2Slide
 ```
 
-2. Drag/drop Tex2Keynote app into Finder bar.
+2. Drag/drop Tex2Slide app into Finder bar.
 
 
 ## Usage
@@ -22,10 +22,10 @@ notes.
 
 ![Step 1](/assets/screen1tex2key.jpg?raw=true "Step 1")
 
-2. Click Tex2Keynote. Done.
+2. Click Tex2Slide. Done.
 
 ![Step 2](/assets/screen2tex2key.jpg?raw=true "Step 2")
 
 ## Requirements
 
-1. pdflatex --- set correct path in `tex2keynote.sh`. Default: `/Library/TeX/texbin/pdflatex`.
+1. pdflatex --- set correct path in `tex2slide.sh`. Default: `/Library/TeX/texbin/pdflatex`.
